@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             titulo: "O Futuro com IA",
             texto: "A inteligência artificial está transformando o mundo, revolucionando indústrias e melhorando a vida cotidiana. Na A1-META, lideramos essa revolução, oferecendo soluções inovadoras em IA, computação em nuvem e realidade virtual. Nossa missão é capacitar empresas e indivíduos a explorar todo o potencial dessas tecnologias emergentes, promovendo um futuro mais conectado e eficiente.",
-            imagem: "src/images/_8e1a5b72-c6ba-4700-a5b3-885537151ce9.jfif"
+            imagem: "src/images/robocabeca.png"
         }
     ];
 
