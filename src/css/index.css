@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER DA PAGINA */
+
+header {
+    background-color: rgb(38,38,38,);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.cabecalho {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px;
+    position: absolute;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+.cabecalho.scrolled {
+    background-color: rgb(38, 38, 38);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    width: 111px;
+    height: auto;
+    margin-right: 390px;
+    
+}
+
+.navegacao-opcoes-menu .items-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navegacao-opcoes-menu .items-menu .item {
+    margin: 10px;
+}
+
+.navegacao-opcoes-menu .items-menu .item a {
+    padding: 15px;
+    font-family: "Varela Round", sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.2s ease-in-out;
+}
+
+.navegacao-opcoes-menu .items-menu .item a:hover {
+    background-color: rgb(0, 52, 112);
+    color: orange;
+    border-radius: 12px 20px 4px;
+}
+
+
+/* MAIN */
+
+.conteudo-informativo {
+    
+    background-image: url(/src/images/imaaa.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: #5f5656;
+    opacity: 0.96;
+
+}
+
+.conteudo-informativo {
+    position: relative;
+}
+
+.conteudo-informativo .conteudo {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    height: 92vh;
+    width: 100%;
+}
+
+.conteudo-informativo .conteudo .informacoes {
+    width: 100%;
+    margin-bottom: 30px;
+   
+}
+
+.conteudo-informativo .conteudo .informacoes .titulo {
+    font-family: "hind siliguri", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 60px;
+    margin-top: 190px;
+    
+
+}
+
+.conteudo-informativo .conteudo  .informacoes p {
+    font-family: "hind siliguri", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 19px;
+   
+}
+
+.conteudo-informativo span{
+    color: #ff7f2a;
+}
+
+.image-about-service img {
+    max-width: 90%;
+    margin-left: 60px;
+    border-radius: 30% 70% 70% 30% / 60% 40% 60% 40%;
+    height: auto;
+    border: 5px solid rgb(0, 52, 112);
+}
+
+.about-section {
+    margin-top: 50px;
+    padding: 50px 15px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content-col, .image-col {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.image-col img {
+    max-width: 100%;
+    height: auto;
+}
+
+.heading-container h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    
+}
+
+.heading-container span {
+    color: #ff7f2a;
+}
+
+.paragrafo-media {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(34, 31, 31);
+   
+    text-align: justify;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 760px) {
+    .row {
+        flex-wrap: nowrap;
+    }
+
+    .content-col, .image-col {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .heading-container h2 {
+        font-size: 36px;
+        text-align: left;
+    }
+
+    .paragrafo-media {
+        font-size: 18px;
+    }
+}
+
+.services span {
+    color: #ff7f2a;
+}
+
+.services .services-title {
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 500;
+    font-size: 52px;
+    margin-bottom: 20px;
+    color: rgb(2, 2, 2);
+}
+
+
+
+
+
+
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.services {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+   background-image: url(/src/images/);
+    opacity: 3.6;
+}
+
+.service-item {
+   
+    max-width: 1200px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 360px;
+    height: 234px;
+    text-align: center;
+    justify-content: space-between;
+    padding: 25px 15px;
+    /* background-color: rgba(255, 1, 1, 0.841); */
+}
+
+.service-item:hover{
+    background-color: rgb(217, 115, 37);
+    color: #fff;
+    transform: translateY(-5px);
+    font-family: "Varela Round", sans-serif;
+    font-weight: 500;
+}
+
+.paragrafo-services{
+    font-family: "hind siliguri", sans-serif;
+    font-weight: 400; 
+    font-size: 15px;
+    font-style: initial;
+    line-height: 21px;
+    color: #040404;
+    
+}
+
+.paragrafo-services:hover {
+    color: #fff;
+}
+
+.image-services {
+    width: 66px;
+    height: auto;
+   
+}
+
+
+.conteudo-IA{
+    background-color:rgb(0, 52, 112);
+    background-image: url(/src/images/aaaaaaaaaaaaaaaaa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay; 
+     background-blend-mode: overlay;
+     opacity: 0.9;
+}
+
+.conteudo-IA{
+    position: relative;
+}
+
+.conteudo-IA .conteudo{
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    height: 83vh;
+    width: 100%;
+    
+}
+
+.conteudo-IA .conteudo .informacoes{
+    width: 100%;
+}
+
+.conteudo-IA .imagem{
+    width: 38%;
+    /* border-radius: 60% 70% 70% 30% ; */
+    margin-left: 40px;
+    /* border: 5px solid rgb(0, 52, 112); */
+   
+}
+
+.conteudo-IA .conteudo .informacoes{
+    margin-bottom: 30px;
+    width: 100%;
+   
+}
+
+.conteudo-IA .conteudo .informacoes .titulo-IA{
+    font-family: "Varela Round", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: rgb(255, 250, 250);
+    
+}
+
+
+
+.conteudo-IA .conteudo .informacoes .texto{
+    font-family: "hind siliguri", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    color: #ffffff;
+   
+}
+
+.conteudo-IA span {
+    color: #ff7f2a;
+}
+
+.section-what {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+    height: 40vh;
+    background-color: rgb(25, 26, 55);
+    opacity: 0.96;
+    background-image: url(/src/images/TORRR.jpg); /* Troque pela sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.section-what span {
+    color: #ff7f2a;
+}
+
+.overlay {
+    text-align: center;
+
+ /* background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;  */
+}
+
+h1 {
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    font-size: 1rem;
+    padding: 1px 2px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-btn img {
+    margin-right: 10px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1EBE53;
+}
+
+
+#map {
+    height: 400px;  /* Altura do mapa */
+    width: 100%;    /* Largura completa */
+}
+
+
+
+.map-localizacao h1 {
+    font-family: "hind siliguri", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+
+@media screen and (min-width:1400px) {
+    
+
+    div.services-container{
+       margin-left: 85px;
+        width: 1345px;
+        height: auto;
+    }
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
+/* Responsividade para telas menores que 700px */
+@media screen and (max-width: 700px) {
+    .cabecalho {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .logo-hm img {
+        width: 24%;
+        margin-bottom: 15px;
+      }
+
+    .navegacao-opcoes-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .navegacao-opcoes-menu .items-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacao-opcoes-menu .items-menu .item {
+        margin: 5px 0;
+    }
+
+    .conteudo-informativo .conteudo {
+        padding: 0 5%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .conteudo-informativo .conteudo .informacoes .titulo {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+
+    .conteudo-informativo .conteudo .informacoes p {
+        font-size: 16px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .section-what {
+        height: auto;
+        padding: 20px;
+    }
+
+    .conteudo-IA .conteudo {
+        padding: 0 5%;
+        flex-direction: column;
+        margin-bottom: 500px;
+    }
+
+    .conteudo-IA .imagem {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .service-item {
+        margin-top: 30px;
+    }
+}
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        background-color: transparent;
+        color: rgb(17, 2, 2);
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 1100;
+    }
+    .navegacao-opcoes-menu .items-menu {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 50px; 
+        right: 20px; 
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 1000;
+    }
+    
+    .navegacao-opcoes-menu .items-menu.show {
+        display: flex;  
+    }
+    
+    .navegacao-opcoes-menu .items-menu .item {
+        margin: 10px 0;
+    }
+    
+    .navegacao-opcoes-menu .items-menu .item a {
+        padding: 15px;
+        font-family: "Varela Round", sans-serif;
+        font-size: 17px;
+        color: #fff;
+        font-weight: 400;
+        font-style: normal;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .navegacao-opcoes-menu .items-menu .item a:hover {
+        background-color: rgb(184, 0, 31);
+        color: white;
+        border-radius: 12px 20px 4px;
+    }
+    
+    ul.items-menu.show a:hover{
+        background-color: rgb(184, 0, 31);
+    }
+
+    #chat-container{
+        left: 67px;
+    }
+
+    #chatbot-icon{
+        left: 600px;
+        
+    }
+}
+
+#chatbot-icon {
+    position: fixed;
+    bottom: 20px; 
+    left: 20px;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+}
+
+#chat-container {
+    position: fixed;
+    bottom: 20px;
+    left: 94px; 
+    width: 300px;
+    max-height: 400px;
+    background-image: url(/src/images/papel-de-parede-whatsapp-branco-e-azul.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: #8d9c97;
+    opacity: 0.96;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#chat-header {
+    background: #09a738;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+#chat-messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    
+}
+
+#chat-messages p{
+    font-size: 1.1em;
+    color: rgb(2, 2, 2);
+    margin: 10px;
+    font-family: "hind siliguri", sans-serif;
+    font-weight: 600; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+#chat-messages li{
+    font-size: 1.1em;
+    margin: 8px;
+    color: #070707;
+    font-family: "hind siliguri", sans-serif;
+    font-weight: 450; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+#chat-input {
+    display: flex;
+}
+
+#chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+    border-bottom-left-radius: 10px;
+}
+
+#chat-input button {
+    padding: 10px;
+    background: rgb(50, 179, 139);
+    border: none;
+    color: rgb(12, 3, 3);
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#user-input{
+    color: black;
+}

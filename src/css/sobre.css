@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+  
+body {
+  overflow-x: hidden;
+  
+}
+  
+
+  
+
+  
+  /* Seção Principal */
+ 
+
+  .about-informativo {
+    
+    background-image: url(/src/images/melhoradad.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: #242329;
+    opacity: 0.96;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about-informativo {
+    position: relative;
+}
+
+.about-informativo {
+  display: flex;
+  align-items: center;
+  height: 95vh;
+  padding: 70px;
+  width: 100%;
+}
+
+.informacoes-image{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 62px;
+
+}
+  
+.informacoes-image img {
+  max-width: 46%;
+
+
+  border-radius: 39% 20%;
+}
+  /* Seção "Sobre Nós" */
+  /* Seção "Sobre Nós" com Imagem e Texto Alinhados */
+  /* .about-informativo {
+    background-image: url(/src/images/imaaa.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: #5f5656;
+    opacity: 0.96;
+    
+  }
+
+  .about-informativo{
+    position: relative;
+  }
+
+  .about-informativo {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    height: 92vh;
+    width: 100%;
+  }
+  
+  .about-informativo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Espaçamento entre a imagem e o texto 
+  }
+  */
+  .about-content img {
+    max-width: 40%; /* A imagem ocupará 40% da largura */
+    border-radius: 8px;
+  } */
+  
+  .text-content {
+    max-width: 60%; /* O texto ocupará o espaço restante */
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  /* Seção "Serviços" */
+  #services {
+    margin-bottom: 2rem;
+  }
+  
+  #services h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background-color: #f7f7f7;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .card p {
+    color: #555;
+  }
+  
+  /* Seção "Localização" */
+  #location {
+    padding: 2rem;
+    background-color: #eaeaea;
+    border-radius: 8px;
+  }
+  
+  #location h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #location address {
+    font-style: normal;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .sobre-informativo {
+    
+    padding: 50px 15px 50px 15px;
+}
+
+.image-about-service-sobre img {
+  max-width: 90%;
+  margin-left: 60px;
+  border-radius: 30% 70% 70% 30% / 60% 40% 60% 40%;
+  height: auto;
+  
+}
+
+.espacamento {
+   
+  width: 100%;
+  height: 52px;
+  background-color: rgb(24, 108, 204);
+  
+  
+}
+
+div.informacoes-image p {
+  font-family: "hind siliguri", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  color: #ffffff;
+}
+
+div.informacoes-image p span {
+  color: #ff7f2a;
+}
+
+
+section.sobre-informativo h2.h2-service {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+section.sobre-informativo p.paragrafo-media {
+  font-family: "hind siliguri", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+}
+
+
+
+
+
+  
+  /* Rodapé */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+
+  /* Estilos responsivos para telas menores que 700px */
+@media screen and (max-width: 700px) {
+
+  .cabecalho {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.logo-hm img {
+    width: 24%;
+    margin-bottom: 15px;
+  }
+
+.navegacao-opcoes-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navegacao-opcoes-menu .items-menu {
+    flex-direction: column;
+    align-items: center;
+}
+
+.navegacao-opcoes-menu .items-menu .item {
+    margin: 5px 0;
+}
+  /* Ajuste para a seção "Sobre nós" */
+  .about-informativo {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+
+  .informacoes-image {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .informacoes-image img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .informacoes-paragrafo {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  /* Ajuste para a seção "Serviços" */
+  .sobre-informativo .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-informativo .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-col {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .image-col .image-about-service-sobre img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Ajuste de espaçamento */
+  .espacamento {
+    height: 20px;
+  }
+
+  /* Ajuste para o rodapé */
+  footer {
+    padding: 10px 0;
+  }
+}

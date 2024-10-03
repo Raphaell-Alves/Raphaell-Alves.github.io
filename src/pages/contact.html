@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/contact.css">
+    <link rel="stylesheet" href="/src/css/menu.css">
+    <link rel="shortcut icon" href="/src/images/logo-hm-removebg-preview.png" type="image/x-icon">
+    <title>Hidráulica Matias::Contact</title>
+</head>
+<body>
+    <header class="cabecalho" id="header">
+        <a href="#" class="logo-hm">
+            <img src="/src/images/logo-hm-removebg-preview.png"
+                alt="" class="logo">
+        </a>
+
+        <nav class="navegacao-opcoes-menu">
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                &#9776;
+            </button>
+            <ul class="items-menu">
+                <li class="item"><a href="/index.html">Home</a></li>
+                <li class="item"><a href="/src/pages/sobre.html">About</a></li>
+                <li class="item"><a href="/src/pages/service.html">Services</a></li>
+                <li class="item"><a href="/src/pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <section class="contact-form-section">
+            <div class="contact-container">
+                <div class="contact-container-info">
+                    <div class="contact-info">
+                        <img src="/src/images/gps.png" alt="">
+                        <p class="address">R. Heneide Storni Ribeiro, 67 <br> Jardim Alvorada, <br>Jandira - SP, 06612-170</p>
+                    </div>
+                    <div class="contact-info">
+                        <img src="/src/images/telefone.png" alt="">
+                        <p class="phone">(11)4619-1919<br><br>(11)91113-3417
+                        </p>
+                    </div>
+                    <div class="contact-info">
+                        <img src="/src/images/correspondencia.png" alt="">
+                        <p class="email">hidraulicamatias@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>Envie-nos uma Mensagem</h2>
+                    <p>Formulário para Contato</p>
+                    <form id="contact-form">
+                        <input type="text" id="name" name="name" placeholder="Digite seu Nome" required>
+                        <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
+                        <textarea name="message" id="message" placeholder="Deixe uma Mensagem"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2024 hidraulicamatias. All rights reserved.</p>
+</footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "W5Q4yRK4VPvNZpRUw" 
+        });
+    })();
+</script>
+
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            // Coletar dados do formulário
+            var templateParams = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+
+            // Enviar email usando EmailJS
+            emailjs.send('service_th79dqf', 'template_2nuh6zw', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Mensagem enviada com sucesso!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Falha ao enviar a mensagem. Tente novamente mais tarde.');
+                });
+        });
+    </script>
+
+<script>
+    window.addEventListener('scroll', function() {
+     var header = document.getElementById('header');
+     if (window.scrollY > 50) {
+         header.classList.add('scrolled');
+     } else {
+         header.classList.remove('scrolled');
+     }
+ });
+ 
+ 
+ </script>
+ 
+ <script src="/src/js/indexx.js"></script>
+
+
+
+</body>
+</html>

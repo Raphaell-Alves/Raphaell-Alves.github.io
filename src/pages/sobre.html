@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/images/logo-hm-removebg-preview.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hidráulica Matias::About</title>
+
+
+    <link rel="stylesheet" href="/src/css/index.css">
+    <link rel="stylesheet" href="/src/css/menu.css">
+    <link rel="stylesheet" href="/src/css/sobre.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho" id="header">
+        <a href="#" class="logo-hm">
+            <img src="/src/images/logo-hm-removebg-preview.png" alt="" class="logo">
+        </a>
+
+        <nav class="navegacao-opcoes-menu">
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                &#9776;
+            </button>
+            <ul class="items-menu">
+                <li class="item"><a href="/index.html">Home</a></li>
+                <li class="item"><a href="/src/pages/sobre.html">About</a></li>
+                <li class="item"><a href="/src/pages/service.html">Services</a></li>
+                <li class="item"><a href="/src/pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="about-informativo">
+                <div class="informacoes-image">
+                    <img src="/src/images/pixelcut-export (2).png" alt="Sobre nossa empresa">
+
+                    <div class="informacoes-paragrafo">
+                        <p>Com mais de <span>20 anos de experiência no setor</span>, a Hidráulica Matias se destaca na remanufatura de conversores de torque. Nosso compromisso é oferecer soluções de excelência, com foco na qualidade e na inovação, assegurando a satisfação plena de nossos clientes</p>
+                        <p>Acreditamos na qualidade, eficiência e inovação como pilares fundamentais de nosso trabalho. Nosso objetivo é garantir a total satisfação de quem confia em nossos serviços, oferecendo produtos e soluções que se destacam pela confiabilidade e desempenho.</p>
+
+                        <p>Estamos dedicados a entregar resultados com eficiência e precisão, sempre com o objetivo de superar as expectativas de nossos parceiros. Na Hidráulica Matias, nossa missão é agregar valor em cada serviço prestado, oferecendo soluções que atendem às mais altas demandas do mercado.</p>
+                    </div>
+                </div>
+
+                <div class=""></div>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section class="sobre-informativo">
+            <div class="container">
+                <div class="row">
+                    <div class="content-col">
+                        <div class="detalhe">
+                            <div class="heading-container">
+                                <h2 class="h2-service">Conversores de <span>Torque</span></h2>
+                            </div>
+                            <p class="paragrafo-media">Um conversor de torque é um componente fundamental em transmissões automáticas, responsável por transmitir a potência do motor para a caixa de câmbio.<br><br> Diferente de uma embreagem tradicional usada em transmissões manuais, o conversor de torque usa um sistema fluido para transferir a força mecânica. <br><br>Ele é composto por três partes principais: a bomba, o estator e a turbina. A bomba, conectada ao motor, empurra o fluido hidráulico em direção à turbina, que está conectada à transmissão.<br><br> À medida que o fluido se move entre a bomba e a turbina, ele gera força suficiente para movimentar o veículo, permitindo que o motor funcione de maneira mais eficiente em diferentes velocidades.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-col">
+                        <div class="image-about-service-sobre">
+                            <img src="/src/images/pixelcut-export (3).png" alt="Atendimento C4-Team">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="espacamento">
+
+        </div>
+
+        <!-- Seção Localização -->
+        <div class="map-localizacao">
+            
+            <div id="map"></div>
+        
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 hidraulicamatias. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+         var header = document.getElementById('header');
+         if (window.scrollY > 50) {
+             header.classList.add('scrolled');
+         } else {
+             header.classList.remove('scrolled');
+         }
+     });
+     
+     
+     </script>
+     
+      <script src="/src/js/indexx.js"></script>
+    
+  <!-- Chave da API do Google Maps com a função de callback -->
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-mX5DccYiRpoRVqAPlkavo7JJT4afLjk&callback=initMap">
+</script>
+</body>
+
+</html>
