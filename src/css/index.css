@@ -246,12 +246,12 @@ header {
 
 
 .services {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
-   background-image: url(/src/images/);
-    opacity: 3.6;
+    max-width: 1470px; /* Define um limite máximo de largura */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
+
+
+
 
 .service-item {
    

@@ -157,6 +157,8 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    max-width: 1470px; /* Limite a largura máxima para 1470px */
+    margin: 0 auto; /* Centraliza o rodapé */
 }
 
 

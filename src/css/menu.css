@@ -149,6 +149,6 @@ header {
 @media (min-width: 1470px) {
     .cabecalho {
         display: flex;
-        left: 40px;
+        left: 90px;
     }
 }
