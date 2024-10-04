@@ -57,6 +57,8 @@ header {
     
 }
 
+
+
 .navegacao-opcoes-menu .items-menu {
     display: flex;
     justify-content: flex-end;
@@ -292,6 +294,20 @@ header {
     height: auto;
    
 }
+
+@media (min-width: 1470px) {
+    .services-container {
+        max-width: 1470px; /* Definindo uma largura máxima */
+        margin: 0 auto; /* Centraliza o container */
+        display: flex;
+        justify-content: center; /* Mantém os itens centralizados */
+    }
+
+    .services {
+        padding: 0 20px; /* Adiciona um pequeno padding para evitar que fique muito próximo das bordas */
+    }
+}
+
 
 
 .conteudo-IA{
@@ -611,7 +627,7 @@ footer {
 #chat-container {
     position: fixed;
     bottom: 20px;
-    left: 94px; 
+    left: 84px; 
     width: 300px;
     max-height: 400px;
     background-image: url(/src/images/papel-de-parede-whatsapp-branco-e-azul.jpg.jpg);
@@ -688,3 +704,9 @@ footer {
 #user-input{
     color: black;
 }
+
+
+
+
+
+

@@ -160,6 +160,19 @@ ul {
     opacity: 1;
 }
 
+@media (min-width: 1470px) {
+    .container-servicess {
+        justify-content: space-between; /* Mantém as categorias espaçadas de forma uniforme */
+        gap: 30px; /* Ajuste o gap para um valor mais adequado */
+        max-width: 1600px; /* Limita a largura máxima para evitar que os itens fiquem muito espaçados */
+        margin: 0 auto; /* Centraliza o container */
+    }
+    
+    .category {
+        width: 300px; /* Ajusta o tamanho das categorias se necessário */
+    }
+}
+
 
 /* Seção da loja com uma estética moderna */
 .loja-preferida {

@@ -45,7 +45,7 @@ header {
 }
 
 .cabecalho.scrolled {
-    background-color: rgb(168, 34, 34);
+    
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -141,5 +141,14 @@ header {
     ul.items-menu.show a:hover{
         background-color: rgb(0, 52, 112);
         color: orange;
+    }
+}
+
+
+/* Para telas maiores que 1470px */
+@media (min-width: 1470px) {
+    .cabecalho {
+        display: flex;
+        left: 40px;
     }
 }

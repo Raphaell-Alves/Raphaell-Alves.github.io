@@ -19,6 +19,7 @@ body, html {
     background-size: cover;
     background-blend-mode: overlay;
     opacity: 0.96;
+    height: 100%; /* Certifica-se de que a altura da página ocupe 100% da tela */
 }
 
 a {
@@ -151,9 +152,11 @@ ul {
 footer {
     text-align: center;
     padding: 20px;
-   
     background-color: #222;
     color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 
