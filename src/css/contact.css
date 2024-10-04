@@ -19,7 +19,7 @@ body, html {
     background-size: cover;
     background-blend-mode: overlay;
     opacity: 0.96;
-    height: 100%; /* Certifica-se de que a altura da página ocupe 100% da tela */
+   width: 100%;
 }
 
 a {

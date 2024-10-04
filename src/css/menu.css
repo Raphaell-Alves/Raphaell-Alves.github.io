@@ -146,9 +146,9 @@ header {
 
 
 /* Para telas maiores que 1470px */
-@media (min-width: 1537px) {
+@media (min-width: 1540px) {
     .cabecalho {
         display: flex;
-        left: 160px;
+        left: 230px;
     }
 }
